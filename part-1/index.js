@@ -8,7 +8,7 @@ const login = body => axios.post(`${baseURL}/login`, body).then( res => {
   createUserCard(res.data)
 }).catch(err => {
   console.log(err)
-  alert('Uh oh. Your request did not work.')
+  // alert('Uh oh. Your request did not work.')
 })
 const register = body => axios.post(`${baseURL}/register`, body).then(res => {
   createUserCard(res.data)
